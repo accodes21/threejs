@@ -94,15 +94,12 @@ blockquote p {
   width: 100%;
 }
 .example .fadedbox {
-  background-color: #666666;
+  background-color: rgba(142, 142, 142, 0.5);
   position: absolute;
   top: 0;
   left: 0;
   color: #fff;
   -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   opacity: 0;
   width: 100%;
@@ -116,16 +113,12 @@ blockquote p {
 }
 .example .text {
   -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  -ms-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   transform: translateY(30px);
   -webkit-transform: translateY(30px);
 }
 .example .title {
   font-size: 2.5em;
-  text-transform: uppercase;
   opacity: 0;
   transition-delay: 0.2s;
   transition-duration: 0.3s;
@@ -151,7 +144,7 @@ blockquote p {
 }
 
 .title a {
-  background-color: #ffa34d;
+  background-color: #e1e0dc;
 }
 
 .title:hover a {
