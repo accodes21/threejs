@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <title>Aarya Chopkar</title>
   </head>
   <body>
@@ -12,17 +13,17 @@
     <canvas id="bg"></canvas>
     <main>
 
-      <header>
+      <header data-aos="fade-down">
         <h1>Aarya Chopkar</h1>
         <p>🚀 Frontend Developer | UI/UX</p>
       </header>
 
 
-      <blockquote>
+      <blockquote data-aos="fade-left">
         <p>I like making stuff and putting it on the internet</p>
       </blockquote>
 
-      <section>
+      <section data-aos="fade-right" class="left">
         <h2>📜 About</h2>
         <p>
           <ul>
@@ -35,7 +36,7 @@
 
       </section>
 
-      <section class="light">
+      <section class="light" data-aos="zoom-in">
         <h2>👩🏽‍🚀 Projects</h2>
 
         <h2>YouTube Clone📽️</h2>
@@ -73,11 +74,11 @@
 
       </section>
 
-      <blockquote>
+      <blockquote data-aos="zoom-out">
         <p>The best way out is always through <br>-Robert Frost</p>
       </blockquote>
 
-      <section class="left">
+      <section class="left" data-aos="fade-up-right">
         <h2>🌮 Work History</h2>
 
         <h3>McDonalds</h3>
@@ -101,7 +102,12 @@
 
 
     </main>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script type="module" src="/main.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500
+      });
+    </script>
   </body>
 </html>
