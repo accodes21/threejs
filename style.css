@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/jmk3xov.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 *{
   scroll-behavior: smooth;
@@ -49,6 +49,7 @@ h1, h2, h3, blockquote {
 
 h1{
   margin-bottom: 0;
+  font-family: 'Roboto', cursive;
 }
 
 header {
@@ -94,11 +95,21 @@ header {
   width: 50px;
   height: 50px;
   transition: all .15s cubic-bezier(.11,.65,1,1.69);
-  background-color: #7AFF4D;
+  background-color: rgb(211, 211, 210);
 }
 
 .link li a:hover span{
   transform: scale(1.2);
+}
+
+.fa-twitter{
+  color: #00a2ff;
+}
+.fa-github{
+  color: #000000;
+}
+.fa-linkedin{
+  color: #006eff;
 }
 
 section {
