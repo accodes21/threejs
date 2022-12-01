@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap');
 
 *{
   scroll-behavior: smooth;
@@ -20,7 +21,7 @@ canvas {
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
-  --spacing: 300px;
+  --spacing: 280px;
 
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
@@ -42,14 +43,21 @@ main {
 }
 
 h1, h2, h3, blockquote {
-  font-family: elevon, sans-serif;
+  /* font-family: elevon, sans-serif; */
   font-weight: 700;
   font-style: normal;
 }
 
 h1{
   margin-bottom: 0;
-  font-family: 'Roboto', cursive;
+  font-family: 'Lobster Two', cursive;
+  font-size: 2.22em;
+  background: -webkit-linear-gradient(to right, #ff0000, #efdf09);
+  background: linear-gradient(to right, #ff0000, #efdf09);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
 }
 
 header {
@@ -62,13 +70,17 @@ header {
     flex-direction: column;
 }
 
+header p{
+  margin: 15px 0 0 0;
+}
+
 .link{
   position: relative;
   display: flex;
   /* justify-content: center; */
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin-top: 15px;
 }
 
 .link li{
@@ -112,6 +124,14 @@ header {
   color: #006eff;
 }
 
+.subtitle{
+  font-size: 0.7em;
+}
+
+p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 section {
     grid-column: 2 / 8;
     padding: 1rem;
@@ -126,14 +146,15 @@ blockquote {
     padding: 0;
     grid-column: 2 / span 9;
     margin-bottom: var(--spacing);
-}
+    font-family: 'DynaPuff', cursive;
+  }
 
 blockquote p {
     color: black;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.555);
     font-size: 4rem;
     display: inline;
-    line-height: 1;
+    /* line-height: 1; */
 }
 
 .left {
@@ -215,4 +236,18 @@ blockquote p {
 .title a{
   text-decoration: none;
   color: black;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tag a{
+  text-decoration:none;
+  color: #fff;
+}
+
+.tag a:hover{
+  text-decoration: underline;
 }
