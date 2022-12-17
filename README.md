@@ -1,4 +1,8 @@
 # ThreeJS Portfolio✨
+My first 3D website. Practiced using FireshipIO.
+Tech Stack used:
+Vite
+ThreeJS
 
 ## Preview
 
